@@ -39,9 +39,12 @@ main {
 
 .container {
   margin: 1rem;
-  padding: 1rem;
   display: grid;
   grid: 1fr 1fr 1fr / 1fr;
+}
+
+.container > * {
+  padding: 1rem;
 }
 
 /*****************
@@ -84,16 +87,14 @@ main {
 
 button {
   color: white;
-  width: calc(100% - 2rem);
-  margin: 1rem;
-  padding: 1rem 3rem;
+  width: 100%;
+
+  padding: 1rem;
   border-radius: 5px;
   background: var(--brightYellow);
-  border: 2px solid var(--trWhite);
 }
 
 button:hover {
-  outline: 3px solid white;
   cursor: pointer;
   background-color: yellowgreen;
 }
