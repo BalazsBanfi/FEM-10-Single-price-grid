@@ -14,8 +14,6 @@
   box-sizing: border-box;
 }
 
-
-
 /*****************
 ***Body section***
 ******************/
@@ -42,7 +40,7 @@ main {
 .container {
   margin: 1rem;
   display: grid;
-  grid: 3fr 2fr 2fr / 1fr;
+  grid: 4fr 3fr 3fr / 1fr;
 }
 
 .container > * {
@@ -55,8 +53,6 @@ main {
 
 .join {
   background: white;
-  display: grid;
-  align-content: space-around;
 }
 
 .join > h1 {
@@ -74,6 +70,7 @@ main {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 2;
+  opacity: 0.6;
 }
 
 /********************
@@ -85,22 +82,35 @@ main {
   color: white;
 }
 
-.monthly > p {
-  color: var(--lightGray);
+.monthly > h2 {
+  font-size: 1.25rem;
 }
 
-.monthly span {
+.monthly > p:nth-child(2) {
   color: white;
   font-size: 2rem;
+}
+
+.monthly > p > span {
+  color: var(--lightGray);
+  font-size: 1.125rem;
+  opacity: 0.7;
+  position: relative;
+  bottom: 4px;
+}
+
+.monthly > p:nth-child(3) {
+  font-size: 1rem;
 }
 
 button {
   color: white;
   width: 100%;
-
   padding: 1rem;
   border-radius: 5px;
   background: var(--brightYellow);
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 button:hover {
@@ -114,12 +124,22 @@ button:hover {
 
 .why {
   background: var(--cyan);
+  opacity: 0.75;
 }
 
 .why > h2 {
+  padding: 1rem 0 1rem;
   color: white;
+  font-size: 1.25rem;
 }
 
 .why > ul {
   color: var(--lightGray);
+  font-size: 0.875rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.why li {
+  padding-top: 3px;
 }
